@@ -25,7 +25,7 @@ fun commissionCalc(typeCard: String = "Мир", lastTransfer: Int = 0, amount: I
         }
         typeCard == "Visa" -> when {
             amount <= dailyLimit && amount * 0.0075 > 35 -> return  Math.round(amount * 0.0075)
-            amount <= dailyLimit && amount * 0.0075 < 35 -> return 21
+            amount <= dailyLimit && amount * 0.0075 < 35 -> return 35
         }
     }
     return 0
